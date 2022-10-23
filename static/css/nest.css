@@ -72,6 +72,9 @@ body {
     line-height: 24px;
     -webkit-font-smoothing:antialiased;
     text-rendering: optimizeLegibility;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Links */
@@ -513,6 +516,7 @@ blockquote{
     font-weight: 300;
     text-align: left;
     color: #fff;
+    margin-top: auto;
 }
 
 .footer-title {
@@ -524,6 +528,17 @@ blockquote{
 .footer-container{
     padding-top: 20px;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.footer-column {
+    margin-right: 28px;
+}
+#footer-credits {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
 }
 .footer a{
     color: #fff;

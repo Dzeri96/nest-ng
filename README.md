@@ -1,4 +1,9 @@
-# Nest
+# Nest-NG
+
+## Changes in the NG edition
+	- Use of flexbox for better responsiveness on mobile devices
+	- Use of default strings to de-clutter pelicanconf
+	- Footer fixed to bottom of screen if the page is smaller than the vertical height
 
 Nest is a theme for [Pelican](http://docs.getpelican.com) 3.5+, a static site generator written in Python.
 
