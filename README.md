@@ -6,6 +6,7 @@
 - Footer fixed to bottom of screen if the page is smaller than the vertical height
 - Hiding tag glyph if there are no article tags
 - Added summary to article page
+- Added granular Disqus control
 
 Nest is a theme for [Pelican](http://docs.getpelican.com) 3.5+, a static site generator written in Python.
 
@@ -163,6 +164,9 @@ MATOMO_SITE_ID = 1
 SITEURL = 'https://www.molivier.com'
 DISQUS_SITENAME = 'molivier'
 ```
+
+You can enable/disable comments on a per-article basis, by using the `Comments` metadata keyword, with either `true` or `false`.
+The default can be set in your config file by using the `DEFAULT_METADATA` dictionary.
 
 
 ## Third-party assets

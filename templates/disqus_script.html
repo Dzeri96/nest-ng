@@ -1,4 +1,4 @@
-{% if DISQUS_SITENAME and SITEURL and article.status != "draft" %}
+{% if DISQUS_SITENAME and SITEURL and article.status != "draft" and article.comments == 'true' %}
     <div class="comments">
         <div id="disqus_thread"></div>
             <script type="text/javascript">
