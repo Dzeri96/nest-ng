@@ -84,30 +84,30 @@
         <!-- /Google Analytics -->
         {% endif %}
 
-        {% if PIWIK_URL and PIWIK_SITE_ID %}
-        <!-- Piwik Analytics -->
+        {% if (MATOMO_URL or MATOMO_SSL_URL) and MATOMO_SITE_ID %}
+        <!-- Matomo Analytics -->
         <script type="text/javascript">
           var _paq = _paq || [];
           _paq.push(['trackPageView']);
           _paq.push(['enableLinkTracking']);
           (function() {
-            {% if PIWIK_SSL_URL %}
-            var u="{{ PIWIK_SSL_URL }}/";
+            {% if MATOMO_SSL_URL %}
+            var u="{{ MATOMO_SSL_URL }}/";
             {% else %}
-            var u="{{ PIWIK_URL }}/";
+            var u="{{ MATOMO }}/";
             {% endif %}
-            _paq.push(['setTrackerUrl', u+'piwik.php']);
-            _paq.push(['setSiteId', {{ PIWIK_SITE_ID }}]);
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', {{ MATOMO_SITE_ID }}]);
             var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
           })();
         </script>
-        {% if PIWIK_SSL_URL %}
-          <noscript><p><img src="{{ PIWIK_SSL_URL }}//piwik.php?idsite={{ PIWIK_SITE_ID }}" style="border:0;" alt="" /></p></noscript>
+        {% if MATOMO_SSL_URL %}
+          <noscript><p><img src="{{ MATOMO_SSL_URL }}//matomo.php?idsite={{ MATOMO_SITE_ID }}" style="border:0;" alt="" /></p></noscript>
         {% else %}
-          <noscript><p><img src="{{ PIWIK_URL }}/piwik.php?idsite={{ PIWIK_SITE_ID }}" style="border:0;" alt="" /></p></noscript>
+          <noscript><p><img src="{{ MATOMO_URL }}/matomo.php?idsite={{ MATOMO_SITE_ID }}" style="border:0;" alt="" /></p></noscript>
         {% endif %}
-        <!-- /Piwik Analytics -->
+        <!-- /Matomo Analytics -->
         {% endif %}
 
     {% endblock head %}

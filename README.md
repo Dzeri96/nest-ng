@@ -1,15 +1,15 @@
 # Nest-NG
 
 ## Changes in the NG edition
-	- Use of flexbox for better responsiveness on mobile devices
-	- Use of default strings to de-clutter pelicanconf
-	- Footer fixed to bottom of screen if the page is smaller than the vertical height
-	- Hiding tag glyph if there are no article tags
-	- Added summary to article page
+- Use of flexbox for better responsiveness on mobile devices
+- Use of default strings to de-clutter pelicanconf
+- Footer fixed to bottom of screen if the page is smaller than the vertical height
+- Hiding tag glyph if there are no article tags
+- Added summary to article page
 
 Nest is a theme for [Pelican](http://docs.getpelican.com) 3.5+, a static site generator written in Python.
 
-I initially created this theme for [my blog](https://www.molivier.com), but now the theme is supposed to be generic enough to have its own repository.
+I initially created this theme for [my blog](https://blog.dzeri.me), but now the theme is supposed to be generic enough to have its own repository.
 
 ## Screenshots
 
@@ -49,7 +49,7 @@ Add a background image by adding `Illustration` custom parameter in your markdow
 * **Pygments** syntax highlighting
 * **Disqus** support for comments
 * **Google Analytics** support
-* **Piwik** support
+* **MATOMO** support
 * RSS and Atom feeds
 
 ## Settings
@@ -148,6 +148,11 @@ EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
     'extra/logo.svg': {'path': 'logo.svg'}
 }
+# Matomo tracking (optional)
+MATOMO_SSL_URL = 'https://example.com'
+# Not needed if SSL URL provided
+MATOMO_URL = 'http://example.com'
+MATOMO_SITE_ID = 1
 ```
 
 ### Disqus activation
