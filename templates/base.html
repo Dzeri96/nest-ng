@@ -123,9 +123,13 @@
             <div class="container">
                 <div class="header-nav">
                     <div class="header-logo">
-                        <a class="pull-left" href="{{ SITEURL }}/"><img class="mr20" src="{{ SITEURL }}{{NEST_HEADER_LOGO or "/logo.svg" }}" alt="logo">{{ SITENAME }}</a>
+                        <a href="{{ SITEURL }}/"><img class="mr20 logo" src="{{ SITEURL }}{{NEST_HEADER_LOGO or "/logo.svg" }}" alt="logo">{{ SITENAME }}</a>
                     </div>
-                    <div class="nav pull-right">
+                    <input id="menu-toggle" type="checkbox"/>
+                    <label class='menu-button-container' for="menu-toggle">
+                        <div class='menu-button'></div>
+                    </label>
+                    <div class="nav">
                         {% for title, link in MENUITEMS %}
                             {% if 'http://' in link or 'https://' in link %}
                                 <a href="{{ link }}">{{ title }}</a>
