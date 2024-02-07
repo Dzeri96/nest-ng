@@ -1,7 +1,7 @@
 /*!
-* Nest v1.0.0 (http://www.molivier.com)
-* Copyright 2015 Matthieu OLIVIER
-* Licensed under GPL V2 (https://github.com/molivier/nest/blob/master/LICENSE)
+* Nest v1.1.0 (http://www.molivier.com, https://blog.dzeri.me)
+* Copyright 2024 Matthieu OLIVIER, Dzeri96
+* Licensed under GPL V2 (https://github.com/dzeri96/nest-ng/blob/master/LICENSE)
 */
 
 /* Responsive */
@@ -47,19 +47,33 @@
     }
 }
 
+.container {
+    max-width: 100%;
+}
+
 @media (min-width: 768px) {
     .container {
+        min-width: 90vw;
         width: 750px;
     }
 }
+
 @media (min-width: 992px) {
     .container {
-        width: 850px;
+        min-width: 60vw;
+        width: 900px;
     }
 }
+
 @media (min-width: 1200px) {
     .container {
-        width: 850px;
+        width: 1100px
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        width: 1500px
     }
 }
 
@@ -124,10 +138,16 @@ pre, code {
     border-radius: 0px;
     color: #4b505a;
     margin: 34px 0;
-    font-weight: 700; 
+    font-weight: 700;
 }
 
-code { padding: 3px 6px; }
+code { 
+    padding: 3px 6px;   
+}
+
+pre code {
+    white-space: pre;
+}
 
 .linenos pre{
     border:none;

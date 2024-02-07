@@ -7,10 +7,11 @@
 - Hiding tag glyph if there are no article tags
 - Added summary to article page
 - Added granular Disqus control
+- Scrollable code boxes
 
 Nest is a theme for [Pelican](http://docs.getpelican.com) 3.5+, a static site generator written in Python.
 
-I initially created this theme for [my blog](https://blog.dzeri.me), but now the theme is supposed to be generic enough to have its own repository.
+I initially created this theme for [my blog](https://blog.dzeri.me), but it is supposed to be generic enough to have its own repository.
 
 ## Screenshots
 
