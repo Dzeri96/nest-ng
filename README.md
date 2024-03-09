@@ -8,6 +8,7 @@
 - Added summary to article page
 - Added granular Disqus control
 - Scrollable code boxes
+- HTML meta tag `description` now comes from the `Summary` markdown metadata, instead from the article content
 
 Nest is a theme for [Pelican](http://docs.getpelican.com) 3.5+, a static site generator written in Python.
 
