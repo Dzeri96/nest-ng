@@ -14,6 +14,9 @@ Nest is a theme for [Pelican](http://docs.getpelican.com) 3.5+, a static site ge
 
 I initially created this theme for [my blog](https://blog.dzeri.me), but it is supposed to be generic enough to have its own repository.
 
+## TODO:
+Fix pagination
+
 ## Screenshots
 
 ### Homepage
